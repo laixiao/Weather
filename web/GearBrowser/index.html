@@ -28,9 +28,6 @@
 	<script egret="lib" src="libs/modules/game/game.web.min.js"></script>
 	<script egret="lib" src="libs/modules/res/res.min.js"></script>
 	<script egret="lib" src="libs/modules/eui/eui.min.js"></script>
-	<script egret="lib" src="libs/modules/tween/tween.min.js"></script>
-	<script egret="lib" src="libs/modules/socket/socket.min.js"></script>
-	<script egret="lib" src="libs/modules/dragonBones/dragonBones.min.js"></script>
 	<!--modules_files_end-->
 
     <!--这个标签为不通过egret提供的第三方库的方式使用的 javascript 文件，请将这些文件放在libs下，但不要放在modules下面。-->
@@ -63,7 +60,7 @@
          * "audioType": "" //使用的音频类型，0:默认，1:qq audio，2:web audio，3:audio
          * }
          **/
-        egret.runEgret({renderMode:"webgl", audioType:0});
+        egret.runEgret({renderMode:"canvas", audioType:0});
     </script>
 </body>
 </html>
