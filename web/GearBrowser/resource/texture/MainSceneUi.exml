@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="MainSceneUi" width="360" height="360" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="bg1_png" x="8" y="20" scaleX="1.2" scaleY="1.2"/>
+	<e:Image id="baiduBt" source="baidu_png" x="0" y="160" scaleX="0.9" scaleY="0.9"/>
+	<e:Image id="googleBt" source="google_png" x="295" y="160" scaleX="0.9" scaleY="0.9"/>
+	<e:Image id="qiubaiBt" source="qiubai_png" x="148" y="20" width="72" height="72" scaleX="0.9" scaleY="0.9"/>
+	<e:Image id="MiddleCicle" source="Middle-circle_png" x="93" y="178"/>
+</e:Skin>

@@ -1,7 +1,7 @@
 {
 	"groups": [
 		{
-			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,bg_jpg,egret_icon_png,description_json",
+			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,bg_jpg,egret_icon_png,description_json,baidu_png,google_png,qiubai_png,bg1_png,Middle-circle_png",
 			"name": "preload"
 		}
 	],
@@ -135,6 +135,31 @@
 			"name": "description_json",
 			"type": "json",
 			"url": "config/description.json"
+		},
+		{
+			"name": "baidu_png",
+			"type": "image",
+			"url": "texture/baidu.png"
+		},
+		{
+			"name": "google_png",
+			"type": "image",
+			"url": "texture/google.png"
+		},
+		{
+			"name": "qiubai_png",
+			"type": "image",
+			"url": "texture/qiubai.png"
+		},
+		{
+			"name": "bg1_png",
+			"type": "image",
+			"url": "texture/bg1.png"
+		},
+		{
+			"name": "Middle-circle_png",
+			"type": "image",
+			"url": "texture/Middle-circle.png"
 		}
 	]
 }
