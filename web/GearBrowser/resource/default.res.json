@@ -1,7 +1,7 @@
 {
 	"groups": [
 		{
-			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,bg_jpg,egret_icon_png,description_json,baidu_png,google_png,qiubai_png,bg1_png,Middle-circle_png",
+			"keys": "baidu_png,google_png,qiubai_png",
 			"name": "preload"
 		}
 	],
@@ -132,34 +132,34 @@
 			"name": "egret_icon_png"
 		},
 		{
-			"name": "description_json",
+			"url": "config/description.json",
 			"type": "json",
-			"url": "config/description.json"
+			"name": "description_json"
 		},
 		{
-			"name": "baidu_png",
+			"url": "texture/baidu.png",
 			"type": "image",
-			"url": "texture/baidu.png"
+			"name": "baidu_png"
 		},
 		{
-			"name": "google_png",
+			"url": "texture/google.png",
 			"type": "image",
-			"url": "texture/google.png"
+			"name": "google_png"
 		},
 		{
-			"name": "qiubai_png",
+			"url": "texture/qiubai.png",
 			"type": "image",
-			"url": "texture/qiubai.png"
+			"name": "qiubai_png"
 		},
 		{
-			"name": "bg1_png",
+			"url": "texture/bg1.png",
 			"type": "image",
-			"url": "texture/bg1.png"
+			"name": "bg1_png"
 		},
 		{
-			"name": "Middle-circle_png",
+			"url": "texture/Middle-circle.png",
 			"type": "image",
-			"url": "texture/Middle-circle.png"
+			"name": "Middle-circle_png"
 		}
 	]
 }
