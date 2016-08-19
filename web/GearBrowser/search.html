@@ -14,7 +14,7 @@
             padding: 0;
             border: 0;
             margin: 0;
-            height: 100%;
+            
         }
 		
 		
@@ -46,7 +46,7 @@
 		</center>
 		
 		<center>
-				<input style="width:360px;height:50px; border-radius:5px; font-size:20px; margin-top:50px;"  id="webUrl" type="search"/>
+				<input style="width:350px;height:50px; border-radius:5px; font-size:20px; margin-top:20px;"  id="webUrl" type="url"/>
 				<input style="margin-top:50px; border-radius:25px;  width:200px; font-size:25px;" type="submit" value="Search" onclick="startSearch()"/>		
 		</center>
 		
@@ -90,6 +90,7 @@
 				var webUrl = document.getElementById("webUrl").value;
 				if(isURL(webUrl)){
 					window.location.href = webUrl; 
+					
 				}else{
 					alert("Sorry! The URL you entered wrong!");
 				}
