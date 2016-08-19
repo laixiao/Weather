@@ -23,6 +23,10 @@
 		
 	<body>
 		<center>
+			<input style="width:300px;height:50px; border-radius:5px; font-size:20px; margin-top:60px;"  id="webUrl" type="url"/>
+		</center>
+				
+		<center>
 			<div style="width:250px; font-weight:bold; margin-top:30px">	
 				<div onclick="click01()" style="float:left; margin:5px;width:70px;height:70px;border-radius:35px;background:#ffffff">
 					<a style="line-height:70px;">https://</a>
@@ -46,9 +50,10 @@
 		</center>
 		
 		<center>
-				<input style="width:350px;height:50px; border-radius:5px; font-size:20px; margin-top:20px;"  id="webUrl" type="url"/>
-				<input style="margin-top:50px; border-radius:25px;  width:200px; font-size:25px;" type="submit" value="Search" onclick="startSearch()"/>		
+			<input id="searchBt" style="margin-top:50px; border-radius:25px;  width:200px; font-size:25px;" type="submit" value="Search" onclick="startSearch()"/>	
 		</center>
+		
+		
 		
 		<script>
 			function click01(){
@@ -87,14 +92,24 @@
 			}
 			
 			function startSearch(){
-				var webUrl = document.getElementById("webUrl").value;
-				if(isURL(webUrl)){
-					window.location.href = webUrl; 
-					
-				}else{
-					alert("Sorry! The URL you entered wrong!");
-				}
+				var webUrl = document.getElementById("webUrl");
+				var searchBt = document.getElementById("searchBt");
 				
+				if(isURL(webUrl)){
+					window.location.href = webUrl.value; 
+					var i=0;
+					self.setInterval(function(){
+						i++;
+						if(i>3){
+							i=0;
+							searchBt.value = "Search";
+						}
+						searchBt.value +=".";
+					},500);
+				}else{
+					searchBt.value = "URL wrong!";
+					setTimeout(function(){searchBt.value = "Search";},4000);
+				}
 			}
 			
 		</script>
