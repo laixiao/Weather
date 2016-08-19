@@ -76,15 +76,15 @@
 			}
 			
 			
-			var isURL = function(str_url) {// 验证url
+			var isURL = function(str_url) {// 楠岃瘉url
 				var strRegex = "^((https|http|ftp|rtsp|mms)?://)"
-				+ "?(([0-9a-z_!~*'().&=+$%-]+: )?[0-9a-z_!~*'().&=+$%-]+@)?" // ftp的user@
-				+ "(([0-9]{1,3}\.){3}[0-9]{1,3}" // IP形式的URL- 199.194.52.184
-				+ "|" // 允许IP和DOMAIN（域名）
-				+ "([0-9a-z_!~*'()-]+\.)*" // 域名- www.
-				+ "([0-9a-z][0-9a-z-]{0,61})?[0-9a-z]\." // 二级域名
+				+ "?(([0-9a-z_!~*'().&=+$%-]+: )?[0-9a-z_!~*'().&=+$%-]+@)?" // ftp鐨剈ser@
+				+ "(([0-9]{1,3}\.){3}[0-9]{1,3}" // IP褰㈠紡鐨刄RL- 199.194.52.184
+				+ "|" // 鍏佽IP鍜孌OMAIN锛堝煙鍚嶏級
+				+ "([0-9a-z_!~*'()-]+\.)*" // 鍩熷悕- www.
+				+ "([0-9a-z][0-9a-z-]{0,61})?[0-9a-z]\." // 浜岀骇鍩熷悕
 				+ "[a-z]{2,6})" // first level domain- .com or .museum
-				+ "(:[0-9]{1,4})?" // 端口- :80
+				+ "(:[0-9]{1,4})?" // 绔彛- :80
 				+ "((/?)|" // a slash isn't required if there is no file name
 				+ "(/[0-9a-z_!~*'().;?:@&=+$,%#-]+)+/?)$";
 				var re = new RegExp(strRegex);
@@ -95,7 +95,7 @@
 				var webUrl = document.getElementById("webUrl");
 				var searchBt = document.getElementById("searchBt");
 				
-				if(isURL(webUrl)){
+				//if(isURL(webUrl)){
 					window.location.href = webUrl.value; 
 					var i=0;
 					self.setInterval(function(){
@@ -106,10 +106,10 @@
 						}
 						searchBt.value +=".";
 					},500);
-				}else{
-					searchBt.value = "URL wrong!";
-					setTimeout(function(){searchBt.value = "Search";},4000);
-				}
+				//}else{
+				//	searchBt.value = "URL wrong!";
+				//	setTimeout(function(){searchBt.value = "Search";},4000);
+				//}
 			}
 			
 		</script>
