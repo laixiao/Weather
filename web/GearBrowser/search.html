@@ -27,30 +27,30 @@
 		</center>
 				
 		<center>
-			<div style="width:250px; font-weight:bold; margin-top:30px">	
-				<div onclick="click01()" style="float:left; margin:5px;width:70px;height:70px;border-radius:35px;background:#ffffff">
-					<a style="line-height:70px;">https://</a>
+			<div style="width:350px; font-weight:bold; margin-top:20px">	
+				<div onclick="click01()" style="float:left; margin:5px;width:80px;height:80px;border-radius:40px;background:#ffffff">
+					<a style="line-height:80px;">https://</a>
 				</div>
-				<div onclick="click02()" style="float:left; margin:5px;width:60px;height:60px;border-radius:30px;background:#ffffff">
-					<a style="line-height:60px;">http://</a>
+				<div onclick="click02()" style="float:left; margin:5px;width:70px;height:70px;border-radius:35px;background:#ffffff">
+					<a style="line-height:70px;">http://</a>
 				</div>
-				<div onclick="click03()" style="float:left; margin:5px;width:36px;height:36px;border-radius:18px;background:#ffffff">
-					<a style="line-height:36px;">www.</a>
+				<div onclick="click03()" style="float:left; margin:5px;width:50px;height:50px;border-radius:25px;background:#ffffff">
+					<a style="line-height:50px;">www.</a>
 				</div>
-				<div onclick="click04()" style="float:left; margin:5px;width:36px;height:36px;border-radius:18px;background:#ffffff">
-					<a style="line-height:36px;">/</a>
+				<div onclick="click04()" style="float:left; margin:5px;width:50px;height:50px;border-radius:25px;background:#ffffff">
+					<a style="line-height:50px;">/</a>
 				</div>
-				<div onclick="click05()" style="float:left; margin:5px;width:36px;height:36px;border-radius:18px;background:#ffffff">
-					<a style="line-height:36px;">.com</a>
+				<div onclick="click05()" style="float:left; margin:5px;width:50px;height:50px;border-radius:25px;background:#ffffff">
+					<a style="line-height:50px;">.com</a>
 				</div>
-				<div onclick="click06()" style="float:left; margin:5px;width:36px;height:36px;border-radius:18px;background:#ffffff">
-					<a style="line-height:36px;">.cn</a>
+				<div onclick="click06()" style="float:left; margin:5px;width:50px;height:50px;border-radius:25px;background:#ffffff">
+					<a style="line-height:50px;">.cn</a>
 				</div>
 			</div>
 		</center>
 		
 		<center>
-			<input id="searchBt" style="margin-top:50px; border-radius:25px;  width:200px; font-size:25px;" type="submit" value="Search" onclick="startSearch()"/>	
+			<input id="searchBt" style="margin-top:30px; border-radius:25px;  width:250px; padding:5px 0px; font-size:30px;" type="submit" value="Search" onclick="startSearch()"/>	
 		</center>
 		
 		
@@ -90,12 +90,15 @@
 				var re = new RegExp(strRegex);
 				return re.test(str_url);
 			}
+			function isURL2(str){
+				return!!str.match(/(((^https?:(?:\/\/)?)(?:[-;:&=\+\$,\w]+@)?[A-Za-z0-9.-]+|(?:www.|[-;:&=\+\$,\w]+@)[A-Za-z0-9.-]+)((?:\/[\+~%\/.\w-_]*)?\??(?:[-\+=&;%@.\w_]*)#?(?:[\w]*))?)$/g);
+			}
 			
 			function startSearch(){
 				var webUrl = document.getElementById("webUrl");
 				var searchBt = document.getElementById("searchBt");
 				
-				//if(isURL(webUrl)){
+				if(isURL(webUrl.value)){
 					window.location.href = webUrl.value; 
 					var i=0;
 					self.setInterval(function(){
@@ -106,10 +109,10 @@
 						}
 						searchBt.value +=".";
 					},500);
-				//}else{
-				//	searchBt.value = "URL wrong!";
-				//	setTimeout(function(){searchBt.value = "Search";},4000);
-				//}
+				}else{
+					searchBt.value = "URL wrong!";
+					setTimeout(function(){searchBt.value = "Search";},4000);
+				}
 			}
 			
 		</script>
