@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<e:Skin class="MainSceneUi" width="360" height="360" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
-	<e:Image id="baiduBt" source="baidu_png" x="100" y="209" scaleX="0.9" scaleY="0.9"/>
-	<e:Image id="googleBt" source="google_png" x="115" y="73" scaleX="0.9" scaleY="0.9"/>
-	<e:Image id="qiubaiBt" source="qiubai_png" x="228" y="161" width="72" height="72" scaleX="0.9" scaleY="0.9"/>
-</e:Skin>

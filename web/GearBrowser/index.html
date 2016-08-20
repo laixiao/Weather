@@ -8,37 +8,69 @@
 		<meta name="screen-orientation" content="portrait"/>
 	 
 		<style>
-        html, body {
-            -ms-touch-action: none;
-            background: #3c3d3d;
-			background-image:url(./img/bg2.png);
-			background-size:100%;
-			background-repeat:no-repeat;
-            padding: 0;
-            border: 0;
-            margin: 0;
-            height: 100%;
-        }
-		.img1{width:50px;height:50px;}
-		.img2{width:72px;height:72px;}
+			html, body {
+				-ms-touch-action: none;
+				background-size:100%;
+				background-repeat:no-repeat;
+				padding: 0;
+				border: 0;
+				margin: 0;
+				height: 100%;
+			}
+			.img1{width:50px;height:50px;}
+			.img2{width:72px;height:72px;}
+			
+			.item{position:absolute;}
+			.item00{left:20%;top:40%;}
+			
+			.item01{left:50%;top:15%;}
+			.item02{left:65%;top:34%;}
+			.item03{left:65%;top:56%;}
+			.item04{left:50%;top:75%;}
 		
-		.item{position:absolute;}
-		.item00{left:20%;top:40%;}
 		
-		.item01{left:50%;top:15%;}
-		.item02{left:65%;top:34%;}
-		.item03{left:65%;top:56%;}
-		.item04{left:50%;top:75%;}
-		
-    </style>
+			#bgDiv, #background {
+                width: 100%;
+                height: 100%;
+				overflow:hidden;
+				padding: 0;
+				border: 0;
+				margin: 0;
+            }
+		</style>
+	
+		<script src="js/rainyday.min.js"></script>
+		<script>
+            function run() {
+                var image = document.getElementById('background');
+				var bgDiv = document.getElementById('bgDiv');
+                image.onload = function() {
+                    var engine = new RainyDay({
+                        image: this,
+						parentElement: bgDiv,
+							
+                    });
+                    //engine.rain([ [1, 2, 80] ]);
+                    //engine.rain([ [3, 3, 0.88], [5, 5, 0.9], [6, 2, 1] ], 100);
+					engine.rain([[1, 0, 20],[3, 3, 1]],100);  
+                };
+                image.crossOrigin = 'anonymous';
+                image.src = 'https://github.com/laixiao/Website/blob/master/web/GearBrowser/img/bg2.png?raw=true';
+				//https://github.com/laixiao/Website/blob/master/web/GearBrowser/img/bg2.png?raw=true
+            }
+        </script>
 	<head/>
 		
-	<body>
+	<body onload="run();">
+		<div id="bgDiv">
+			<img id="background" src="" />
+		</div>
+		
 		<span class="item item00"><a href="https://www.baidu.com"><image class="img2" src="img/baidu.png"></image></a></span>
 		
 		<span class="item item01" ><a href="https://www.google.com/"><image class="img1" src="img/google.png"></image></a></span>
-		<span class="item item02"><a href="https://www.hao123.com"><image class="img1" src="img/qiubai.png"></image></a></span>
-		<span class="item item03"><a href="http://i.qq.com/"><image class="img1" src="img/qiubai.png"></image></a></span>
+		<span class="item item02"><a href="https://www.hao123.com/"><image class="img1" src="img/hao123.png"></image></a></span>
+		<span class="item item03"><a href="https://hao.360.cn/"><image class="img1" src="img/360.png"></image></a></span>
 		<span class="item item04"><a href="./search.html"><image class="img1" src="img/urlIcon.png"></image></a></span>
 		
 		<script>
