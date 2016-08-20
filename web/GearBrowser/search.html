@@ -17,8 +17,42 @@
             
         }
 		
-		
-    </style>
+		#bgDiv, #background {
+                width: 100%;
+                height: 100%;
+				overflow:hidden;
+				padding: 0;
+				border: 0;
+				margin: 0;
+		}
+		</style>
+	
+		<script src="js/rainyday.min.js"></script>
+		<script>
+            function run() {
+                var image = document.getElementById('background');
+				var bgDiv = document.getElementById('bgDiv');
+                image.onload = function() {
+                    var engine = new RainyDay({
+                        image: this,
+						parentElement: bgDiv,
+							
+                    });
+					//重力模块:GRAVITY_LINEAR(简单的重力加速度)和GRAVITY_NON_LINEAR（水滴的随机运动）
+					engine.gravity = engine.GRAVITY_LINEAR;
+					//轨迹模块:当TRAIL_NONE无法拖出尾巴，TRAIL_DROPS函数实现小水滴的痕迹。
+					engine.trail = engine.TRAIL_DROPS;
+					//每隔100毫秒产生一个新雨滴加到Canvas上。[3, 3, 0.88]表示88%的在3和6之间（最小数字是3加上0到3之间的随机数）
+                    engine.rain([ [1, 2, 80] ]);
+                    engine.rain([ [3, 3, 0.88], [1, 5, 0.9], [0, 0, 1] ], 100);
+					//engine.rain([ [3, 2, 2] ], 100);
+					
+                };
+                image.crossOrigin = 'anonymous';
+                image.src = 'http://i.imgur.com/U1Tqqdw.jpg';
+				//https://github.com/laixiao/Website/blob/master/web/GearBrowser/img/bg4.jpg?raw=true
+            }
+        </script>
 	<head/>
 		
 	<body>
