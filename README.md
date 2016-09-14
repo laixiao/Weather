@@ -1,4 +1,11 @@
-
+网站地址：
+	
+	[feidegenggao](https://laixiao.github.io/Website/web/feidegenggao)
+	
+	[muditaowang](https://laixiao.github.io/Website/web/muditaowang)
+	
+	[wujindeheliu](https://laixiao.github.io/Website/web/wujindeheliu)
+	
 
 
 
@@ -71,6 +78,7 @@
 		
 /* 
 		//==========光线传感器Light==========
+		
 		var useLightSensor = function(){
 			//1.检测设备是否支持此传感器
 			var lightCapability = tizen.systeminfo.getCapability("http://tizen.org/feature/sensor.photometer");
@@ -94,9 +102,11 @@
 				});
 			}	
 		}
+		
  */
 /* 
 		//==========压力传感器PRESSURE==========
+		
 		var usePressureSensor = function(){
 			//1.检测设备是否支持此传感器
 			var barometerCapability = tizen.systeminfo.getCapability("http://tizen.org/feature/sensor.barometer");
@@ -120,9 +130,11 @@
 				});
 			}	
 		}
+		
  */
 /* 		
 		//==========心率传感器HRM_RAW==========
+		
 		//添加权限：Privilege: http://tizen.org/privilege/healthinfo
 		var useHRM_RAWSensor = function(){
 			//1.检测设备是否支持此传感器
@@ -147,9 +159,11 @@
 				});
 			}	
 		}
+		
  */
 /* 
 		//==========重力传感器GRAVITY==========
+		
 		//可画坐标系观察，放置于水平桌面上：y轴向上.
 		var useGravitySensor = function(){
 			//1.检测设备是否支持此传感器
@@ -176,9 +190,11 @@
 			//	console.log("=========not support=========");
 			//}				
 		}
+		
 	 */
 /* 
 		//==========陀螺仪GYROSCOPE==========
+		
 		var useGyroscopeSensor = function(){
 			//1.检测设备是否支持此传感器
 			//var magnetometerCapability = tizen.systeminfo.getCapability("http://tizen.org/feature/sensor.magnetometer");
@@ -204,6 +220,7 @@
 			//	console.log("=========not support=========");
 			//}				
 		}	
+		
  */
 
 
@@ -225,6 +242,7 @@
 
 /*   
 	 	//心率监听HRM
+		
 		var HRMTest = function(){
 			//1.开始监测：HRM、WRIST_UP
 			tizen.humanactivitymonitor.start("HRM", function(hrmInfo){
@@ -234,10 +252,12 @@
 			//停止监测
 			//tizen.humanactivitymonitor.stop("HRM"); 
 		}
+		
 */
 
 /* 
 		//计步器
+		
 		var PedometerTest = function(){
 			tizen.humanactivitymonitor.setAccumulativePedometerListener(function(pedometerInfo){
 				//console.log("Step status : " + pedometerInfo.stepStatus);
@@ -247,6 +267,7 @@
 			   	//tizen.humanactivitymonitor.unsetAccumulativePedometerListener();
 			});
 		}
+		
  */
 	
 	</script>
