@@ -1,5 +1,13 @@
 网站地址：
 	
+
+-[1.cartoon](https://laixiao.github.io/game-engine/egret/cartoon/index.html)
+
+-[2.legend](https://laixiao.github.io/game-engine/egret/legend2/index.html)
+
+-[3.maggots](https://laixiao.github.io/game-engine/egret/maggots/index.html)
+
+
 	-[feidegenggao](https://laixiao.github.io/Website/web/feidegenggao)
 	
 	-[muditaowang](https://laixiao.github.io/Website/web/muditaowang)
