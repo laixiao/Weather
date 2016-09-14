@@ -1,59 +1,68 @@
 <!DOCTYPE HTML>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"/>
-		<meta name="apple-mobile-web-app-capable" content="yes"/>
-		<meta name="full-screen" content="true"/>
-		<meta name="screen-orientation" content="portrait"/>
-	 
-		<style>
-			html, body {
-				-ms-touch-action: none;
-				background-size:100%;
-				background-color:#1B262E;
-				background-repeat:no-repeat;
-				padding: 0;
-				border: 0;
-				margin: 0;
-				height: 100%;
-			}
-			.img1{width:50px;height:50px;}
-			.img2{width:72px;height:72px;}
-			
-			.item{position:absolute;}
-			.item00{left:20%;top:40%;}
-			
-			.item01{left:50%;top:15%;}
-			.item02{left:65%;top:34%;}
-			.item03{left:65%;top:56%;}
-			.item04{left:50%;top:75%;}
-		
-		
-			#bgDiv, #background {
-                width: 100%;
-                height: 100%;
-				overflow:hidden;
-				padding: 0;
-				border: 0;
-				margin: 0;
-            }
-		</style>
-	
-	
-	<head/>
-		
-	<body>
-	
-		<span class="item item00"><a href="https://laixiao.github.io/Website/web/feidegenggao/index.html">url1</a></span>
-		<span class="item item01" ><a href="https://laixiao.github.io/Website/web/muditaowang/index.html">url2</a></span>
-		<span class="item item02"><a href="https://laixiao.github.io/Website/web/wujindeheliu/index.html">url3</a></span>
-		<span class="item item03"><a href="https://laixiao.github.io/Website/web/feidegenggao/index.html">url4</a></span>
-		<span class="item item04"><a href="https://laixiao.github.io/Website/web/feidegenggao/index.html">url5</a></span>
-		
-		<script>
-			
-		</script>
-	</body>
+<head>
+    <meta charset="utf-8">
+    <title>Egret</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="full-screen" content="true"/>
+    <meta name="screen-orientation" content="portrait"/>
+    <meta name="x5-fullscreen" content="true"/>
+    <meta name="360-fullscreen" content="true"/>
+    <style>
+        html, body {
+            -ms-touch-action: none;
+            background: #888888;
+            padding: 0;
+            border: 0;
+            margin: 0;
+            height: 100%;
+        }
+    </style>
 
+    <!--这个标签为通过egret提供的第三方库的方式生成的 javascript 文件。删除 modules_files 标签后，库文件加载列表将不会变化，请谨慎操作！-->
+    <!--modules_files_start-->
+	<script egret="lib" src="libs/modules/egret/egret.min.js"></script>
+	<script egret="lib" src="libs/modules/egret/egret.web.min.js"></script>
+	<script egret="lib" src="libs/modules/game/game.min.js"></script>
+	<script egret="lib" src="libs/modules/game/game.web.min.js"></script>
+	<script egret="lib" src="libs/modules/res/res.min.js"></script>
+	<script egret="lib" src="libs/modules/eui/eui.min.js"></script>
+	<script egret="lib" src="libs/modules/tween/tween.min.js"></script>
+	<!--modules_files_end-->
+
+    <!--这个标签为不通过egret提供的第三方库的方式使用的 javascript 文件，请将这些文件放在libs下，但不要放在modules下面。-->
+    <!--other_libs_files_start-->
+    <!--other_libs_files_end-->
+
+    <!--这个标签会被替换为项目中所有的 javascript 文件。删除 game_files 标签后，项目文件加载列表将不会变化，请谨慎操作！-->
+    <!--game_files_start-->
+	<script src="main.min.js"></script>
+	<!--game_files_end-->
+</head>
+<body>
+
+    <div style="margin: auto;width: 100%;height: 100%;" class="egret-player"
+         data-entry-class="Main"
+         data-orientation="auto"
+         data-scale-mode="showAll"
+         data-frame-rate="60"
+         data-content-width="640"
+         data-content-height="640"
+         data-show-paint-rect="false"
+         data-multi-fingered="2"
+         data-show-fps="true" data-show-log="false"
+         data-show-fps-style="x:120,y:120,size:12,textColor:0xffffff,bgAlpha:0.9">
+    </div>
+    <script>
+        /**
+         * {
+         * "renderMode":, //引擎渲染模式，"canvas" 或者 "webgl"
+         * "audioType": "" //使用的音频类型，0:默认，1:qq audio，2:web audio，3:audio
+         * "antialias": //WebGL模式下是否开启抗锯齿，true:开启，false:关闭，默认为false
+         * }
+         **/
+        egret.runEgret({renderMode:"webgl", audioType:0});
+    </script>
+</body>
 </html>

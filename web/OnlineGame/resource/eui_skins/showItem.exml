@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="showItemSkin" width="640" height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+	<w:Config id="15723017b49" ></w:Config>
+	<e:Rect left="0" right="0" top="0" bottom="0"/>
+	<e:Image id="gameIco" top="80" width="200" height="200" x="220" source="fdgg_png"/>
+	<e:Label id="gameName" text="游戏名" y="0" left="0" right="0" textAlign="center" verticalAlign="middle" height="80"/>
+	<e:Label id="gameIntroduce" text="乱七八糟的游戏介绍.." y="280" textAlign="center" verticalAlign="middle" left="80" right="80" height="362"/>
+	<e:Image id="closeBt" source="close01_png" x="456" y="63"/>
+</e:Skin>

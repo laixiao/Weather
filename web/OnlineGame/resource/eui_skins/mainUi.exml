@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="MainUiSkin" width="640" height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+	<w:Config id="15721988e0e" ></w:Config>
+	<e:Label text="Gear在线游戏" x="227" y="10"/>
+</e:Skin>
